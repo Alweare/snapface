@@ -22,4 +22,8 @@ ngOnInit(){
   
 }  
 
+onAddSnap(){
+  this.snaps ++;
+}
+
 }
