@@ -6,7 +6,6 @@ export class FaceSnap {
 		public createdDate: Date,
 		public snaps:number){
 
-
 	}
 	
 	
