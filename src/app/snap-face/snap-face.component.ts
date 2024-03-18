@@ -27,10 +27,10 @@ export class SnapFaceComponent implements OnInit {
   }
 
   onSnap() {
-    if (this.faceSnap.snaps > 0) {
+    if (this.txtSnap === 'Oops, unspap !') {
       this.txtSnap = 'Oh snap !';
       this.faceSnap.snaps--;
-    } else {
+    } else if (this.txtSnap === 'Oh snap !') {
       this.faceSnap.snaps++;
       this.txtSnap = 'Oops, unspap !';
     }
