@@ -15,6 +15,7 @@ export class SnapFaceComponent implements OnInit {
   snaps!: number;
   imageUrl!: string;
   txtSnap!: string;
+  
 
   ngOnInit() {
     this.title = 'Archibald';

@@ -1,6 +1,7 @@
 <div class="face-snap-card" [ngClass]="{snapped:txtSnap === 'Oops, unspap !'}">
+
 	<h2>{{ faceSnap.title | titlecase }}</h2>
-	<p> Mis en ligne le {{ faceSnap.createdDate }} </p>
+	<p> Mis en ligne {{ faceSnap.createdDate | date: 'le dd MMMM yyyy, à HH:mm' }} </p>
 
 	<img [src]="faceSnap.imageUrl" [alt]=" faceSnap.title ">
 
@@ -10,5 +11,5 @@
 		<button (click)="onSnap()"> {{ txtSnap }}</button>
 		<span [ngStyle]="{color: 'rgb(0,' + faceSnap.snaps + ',0)'}">👺 {{faceSnap.snaps}}</span>
 	</p>
-
+	<p>{{ 344.36 | currency: 'EUR' : 'code' }}</p> <!--Juste pour s'amuser avec les pipe de formatage de nombre-->
 </div>
