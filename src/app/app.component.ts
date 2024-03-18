@@ -5,61 +5,65 @@ import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   faceSnaps!: FaceSnap[];
 
-  ngOnInit(){
-   this.faceSnaps = [
-        {
-          title: 'Archimoche',
-          description: 'Mon ennemi',
-          imageUrl:'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-          createdDate:new Date(),
-          snaps:0,
-          location : "Paris"
-        },
-        {
-          title: 'Angels',
-          description:'Vraiment une caricature de gentil !',
-          imageUrl:'https://cdn.pixabay.com/photo/2021/08/16/11/32/girl-6550158_1280.png',
-          createdDate:new Date(),
-          snaps:0,
-          location: "La plage"
-        },
-        {
-          title:'Yanis Ninja',
-          description: 'Vraiment le meilleur des développeurs !',
-          imageUrl:'https://cdn.pixabay.com/photo/2023/09/02/14/48/ai-generated-8229038_1280.png',
-          createdDate:new Date(),
-          snaps:0,
-        },
-        {
-          title: 'Archimoche',
-          description: 'Mon ennemi',
-          imageUrl:'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-          createdDate:new Date(),
-          snaps:0,
-          location : "Paris"
-        },
-        {
-          title: 'Angels',
-          description:'Vraiment une caricature de gentil !',
-          imageUrl:'https://cdn.pixabay.com/photo/2021/08/16/11/32/girl-6550158_1280.png',
-          createdDate:new Date(),
-          snaps:0,
-          location: "La plage"
-        },
-        {
-          title:'Yanis Ninja',
-          description: 'Vraiment le meilleur des développeurs !',
-          imageUrl:'https://cdn.pixabay.com/photo/2023/09/02/14/48/ai-generated-8229038_1280.png',
-          createdDate:new Date(),
-          snaps:0,
-        }
-      ]
-    
+  ngOnInit() {
+    this.faceSnaps = [
+      {
+        title: 'Archimoche',
+        description: 'Mon ennemi',
+        imageUrl:
+          'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
+        createdDate: new Date(),
+        snaps: 150,
+        location: 'Paris',
+      },
+      {
+        title: 'Angels',
+        description: 'Vraiment une caricature de gentil !',
+        imageUrl:
+          'https://cdn.pixabay.com/photo/2021/08/16/11/32/girl-6550158_1280.png',
+        createdDate: new Date(),
+        snaps: 0,
+        location: 'La plage',
+      },
+      {
+        title: 'Yanis Ninja',
+        description: 'Vraiment le meilleur des développeurs !',
+        imageUrl:
+          'https://cdn.pixabay.com/photo/2023/09/02/14/48/ai-generated-8229038_1280.png',
+        createdDate: new Date(),
+        snaps: 0,
+      },
+      {
+        title: 'Archimoche',
+        description: 'Mon ennemi',
+        imageUrl:
+          'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
+        createdDate: new Date(),
+        snaps: 0,
+        location: 'Paris',
+      },
+      {
+        title: 'Angels',
+        description: 'Vraiment une caricature de gentil !',
+        imageUrl:
+          'https://cdn.pixabay.com/photo/2021/08/16/11/32/girl-6550158_1280.png',
+        createdDate: new Date(),
+        snaps: 0,
+        location: 'La plage',
+      },
+      {
+        title: 'Yanis Ninja',
+        description: 'Vraiment le meilleur des développeurs !',
+        imageUrl:
+          'https://cdn.pixabay.com/photo/2023/09/02/14/48/ai-generated-8229038_1280.png',
+        createdDate: new Date(),
+        snaps: 0,
+      },
+    ];
   }
-
 }
